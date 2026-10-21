@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 8
     env:
       DJANGO_SECRET_KEY: public-offline-test-key-no-production-use
-      DATABASE_URL: sqlite:///:memory:
+      DATABASE_URL: 'sqlite:///:memory:'
     steps:
       - name: Check out the exact contribution commit
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
